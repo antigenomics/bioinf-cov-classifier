@@ -13,8 +13,8 @@ path <- '/home/chorzow/BI/MIKE_SH/bioinf-cov-classifier/epitope-classifier/'
 vdjdb <- fread(paste0(path, 'vdjdb_filtered.txt')) %>% 
   filter(species == 'HomoSapiens')  #TODO: ADD FILTERING PROCEDURES FROM THE OTHER SCRIPT
 
-gliph2_output <- fread(paste0(path, 'gliph2/P2373_BGKB12P4LP.csv'))
-tcrdist3_centroids_output <- fread(paste0(path, 'tcrdist3/centroids_df.csv'))
+gliph2_output <- fread(paste0(path, 'gliph2/gliph2_output_raw.csv'))
+tcrdist3_centroids_output <- fread(paste0(path, 'tcrdist3/tcrdist3_output_raw.csv'))
 
 #--------DATA PREPROCESSING--------
 vdjdb$Clonotype <- seq(1:nrow(vdjdb))
